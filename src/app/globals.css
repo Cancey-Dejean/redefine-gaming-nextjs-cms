@@ -1,0 +1,152 @@
+@import "tailwindcss";
+/* @config "../../tailwind.config.ts"; */
+
+/* @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss-animate"; */
+
+@theme {
+  /**
+      * @tokens Color
+      * @presenter Color
+    */
+  /* --color-*: initial; */
+
+  --font-*: initial;
+  --transparent: transparent;
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --yellow-100: #8e983f;
+  --yellow-300: #edff66;
+  --white-smoke: #f5f5f5;
+  --brand: #171717;
+  --brand-foreground: #fafafa;
+  --border: #e0e0e0;
+  --error: #ef4444;
+  --font-general: "General Sans";
+  --font-circular-web: "Circular Web";
+  --font-zentry: "Zentry";
+  --font-robert: "Robert";
+
+  /* --background: var(--white);
+  --foreground: var(--black);
+  --card: var(--white);
+  --card-foreground: 	var(--black);
+  --popover: var(--white);
+  --popover-foreground: 	var(--black);
+  --primary: var(--brand);
+  --primary-foreground: var(--brand-foreground);
+  --secondary: var(--white-smoke);
+  --secondary-foreground: var(--brand);
+  --muted: var(--white-smoke);
+  --muted-foreground: 0 0% 45.1%;
+  --accent: var(--white-smoke);
+  --accent-foreground: var(--brand);
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: var(--brand-foreground);
+  --border: var(--border);
+  --input: var(--border);
+  --ring: 	var(--black);
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+  --radius: 0.5rem;
+  --sidebar-background: var(--brand-foreground);
+  --sidebar-foreground: 240 5.3% 26.1%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: var(--brand-foreground);
+  --sidebar-accent: 240 4.8% 95.9%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 217.2 91.2% 59.8%; */
+}
+
+@layer base {
+  input,
+  textarea,
+  button {
+    border: 0px solid;
+    border-radius: 0;
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    color: inherit;
+  }
+
+  body {
+    /* font-family: var(--font-general); */
+  }
+
+  .indicatorsAnimate {
+    animation: indicator-line 0.5s ease infinite;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+  }
+
+  .mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .special-font {
+    font-family: var(--font-zentry);
+
+    b {
+      font-family: "Zentry";
+      font-feature-settings: "ss01" on;
+    }
+  }
+
+  @keyframes indicator-line {
+    0% {
+      height: 4px;
+      transform: translateY(-0px);
+    }
+    50% {
+      height: 16px;
+      transform: translateY(-4px);
+    }
+    100% {
+      height: 4px;
+      transform: translateY(-0px);
+    }
+  }
+}
+/*
+@layer base {
+
+  .dark {
+    --background: 	var(--black);
+    --foreground: var(--brand-foreground);
+    --card: 	var(--black);
+    --card-foreground: var(--brand-foreground);
+    --popover: 	var(--black);
+    --popover-foreground: var(--brand-foreground);
+    --primary: var(--brand-foreground);
+    --primary-foreground: var(--brand);
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: var(--brand-foreground);
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: var(--brand-foreground);
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: var(--brand-foreground);
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: var(--white);
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+*/
