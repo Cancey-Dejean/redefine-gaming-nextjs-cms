@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/providers";
-import { general, zentry } from "@/utils/fonts";
+import { general, robert, zentry } from "@/utils/fonts";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${general.variable} ${zentry.variable} font-general antialiased`}
+        className={`${general.variable} ${zentry.variable} ${robert.variable} font-general overflow-x-hidden antialiased`}
       >
         <Providers>
           <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">

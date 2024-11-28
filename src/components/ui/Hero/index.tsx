@@ -86,7 +86,7 @@ export default function Hero() {
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        <div className="flex-center hello absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
           {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
@@ -151,15 +151,12 @@ export default function Hero() {
               redefi<b>n</b>e
             </h1>
 
-            <p className="font-robert-regular mb-5 max-w-64 text-blue-100">
+            <p className="font-robert mb-5 max-w-64 text-blue-100">
               Enter the Metagame Layer <br /> Unleash the Play Economy
             </p>
 
             <Button
               id="watch-trailer"
-              // title="Watch trailer"
-              // leftIcon={<TiLocationArrow />}
-              // containerClass="bg-yellow-300 flex-center gap-1"
               className="gap-0 bg-yellow-300 text-xs text-black"
             >
               <LocationArrow />
@@ -169,7 +166,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute right-5 bottom-5 text-black">
+      <h1 className="special-font absolute right-5 bottom-5 text-[12rem] text-black">
         G<b>A</b>MING
       </h1>
     </div>
