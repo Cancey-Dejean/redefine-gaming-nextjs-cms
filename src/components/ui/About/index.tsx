@@ -34,10 +34,15 @@ export default function About() {
           Welcome to Zentry
         </p>
 
-        <AnimatedTitle
-          title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
-          containerClass="mt-5 !text-black text-center"
-        />
+        {/* <AnimatedTitle containerClass="mt-5 !text-black text-center">
+          Disc<b>o</b>ver the world&apos;s <br /> largest shared <b>a</b>
+          dventure
+        </AnimatedTitle> */}
+
+        <h2 className="special-font mt-5 text-center text-8xl leading-none !text-black">
+          Disc<b>o</b>ver the world&apos;s <br /> largest shared <b>a</b>
+          dventure
+        </h2>
 
         <div className="absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center text-lg md:max-w-[34rem] dark:text-black">
           <p className="[font-family:var(--font-circular-web)]">

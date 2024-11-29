@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${generalSans.variable} ${zentry.variable} ${robert.variable} ${circularWeb.variable} ${general.variable} font-general-sans overflow-x-hidden antialiased`}
+        className={`${generalSans.variable} ${zentry.variable} ${robert.variable} ${circularWeb.variable} ${general.variable} font-general-sans overflow-x-hidden antialiased`}
       >
         <Providers>
           <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">

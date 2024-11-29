@@ -141,7 +141,7 @@ export default function Hero() {
           />
         </div>
 
-        <h1 className="special-font text-blue-75 absolute right-5 bottom-5 z-40 text-[12rem] leading-none dark:text-white">
+        <h1 className="special-font text-blue-75 absolute right-10 bottom-10 z-40 text-[12rem] leading-none dark:text-white">
           G<b>A</b>MING
         </h1>
 
@@ -166,7 +166,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <h1 className="special-font absolute right-5 bottom-5 text-[12rem] text-black">
+      <h1 className="special-font absolute right-10 bottom-[-10px] text-[12rem] text-black">
         G<b>A</b>MING
       </h1>
     </div>

@@ -162,7 +162,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
-          <h1 className="font-zentry text-4xl font-black uppercase md:text-6xl">
+          <h1 className="special-font text-4xl font-black uppercase md:text-6xl">
             {title}
           </h1>
           {description && (
