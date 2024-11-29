@@ -33,6 +33,22 @@ export const general = localFont({
   variable: "--font-general",
 });
 
+export const generalSans = localFont({
+  src: [
+    {
+      path: "../../public/fonts/GeneralSans-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/GeneralSans-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-general-sans",
+});
+
 export const robert = localFont({
   src: [
     {

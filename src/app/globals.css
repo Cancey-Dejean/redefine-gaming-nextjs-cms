@@ -22,7 +22,8 @@
   --brand-foreground: #fafafa;
   --border: #e0e0e0;
   --error: #ef4444;
-  --font-general: "General Sans";
+  --font-general: "General";
+  --font-general-sans: "General Sans";
   --font-circular-web: "Circular Web";
   --font-zentry: "Zentry";
   --font-robert: "Robert";
@@ -73,6 +74,10 @@
     background-color: transparent;
     color: inherit;
   }
+
+  body {
+    background-color: var(--white);
+  }
 }
 
 .indicatorsAnimate {
@@ -88,7 +93,6 @@
   font-family: var(--font-zentry);
 
   b {
-    font-family: "Zentry";
     font-feature-settings: "ss01" on;
   }
 }

@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import AnimatedTitle from "@/components/ui/AnimatedTitle";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,8 +39,10 @@ export default function About() {
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center text-lg md:max-w-[34rem]">
-          <p>The Game of Games begins—your life, now an epic MMORPG</p>
+        <div className="absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center text-lg md:max-w-[34rem] dark:text-black">
+          <p className="[font-family:var(--font-circular-web)]">
+            The Game of Games begins—your life, now an epic MMORPG
+          </p>
           <p className="text-gray-500">
             Zentry unites every player from countless games and platforms, both
             digital and physical, into a unified Play Economy
@@ -49,10 +52,12 @@ export default function About() {
 
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path absolute top-0 left-1/2 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw]">
-          <img
+          <Image
             src="/img/about.webp"
             alt="Background"
             className="absolute top-0 left-0 size-full object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            fill
           />
         </div>
       </div>

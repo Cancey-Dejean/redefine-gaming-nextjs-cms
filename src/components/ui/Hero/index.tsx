@@ -82,7 +82,7 @@ export default function Hero() {
     });
   });
 
-  const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
@@ -141,7 +141,7 @@ export default function Hero() {
           />
         </div>
 
-        <h1 className="special-font text-blue-75 absolute right-5 bottom-5 z-40 text-[12rem] leading-none">
+        <h1 className="special-font text-blue-75 absolute right-5 bottom-5 z-40 text-[12rem] leading-none dark:text-white">
           G<b>A</b>MING
         </h1>
 

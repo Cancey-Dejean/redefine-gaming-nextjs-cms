@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/providers";
-import { general, robert, zentry } from "@/utils/fonts";
+import {
+  circularWeb,
+  general,
+  generalSans,
+  robert,
+  zentry,
+} from "@/utils/fonts";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
 
@@ -18,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${general.variable} ${zentry.variable} ${robert.variable} font-general overflow-x-hidden antialiased`}
+        className={` ${generalSans.variable} ${zentry.variable} ${robert.variable} ${circularWeb.variable} ${general.variable} font-general-sans overflow-x-hidden antialiased`}
       >
         <Providers>
           <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
